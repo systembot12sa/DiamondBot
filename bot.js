@@ -2007,13 +2007,7 @@ client.on('message' , message => {
   
   
   client.users.get("337647196235366401").send(
-      "\n" + "**" + "● السيرفر :" + "**" +
-      "\n" + "**" + "» " + message.guild.name + "**" +
-      "\n" + "**" + " ● المرسل : " + "**" +
-      "\n" + "**" + "» " + message.author.tag + "**" +
-      "\n" + "**" + " ● الرسالة : " + "**" +
-      "\n" + "**" + args + "**")
-  
+
   let embed = new Discord.RichEmbed()
        .setAuthor(message.author.username, message.author.avatarURL)
        .setDescription('📬 تم ارسال الرسالة الى صاحب البوت بنجاح')
